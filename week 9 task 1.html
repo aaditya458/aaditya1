@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrected Table Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFCC;
+            padding: 20px;
+        }
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            margin: auto;
+            border: 2px solid black;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .col1 { 
+            background-color: lightblue; 
+            text-align: left; 
+            vertical-align: top; /* Align content to the top */
+        }
+        .col2 { 
+            background-color: yellow; 
+            font-weight: bold; 
+        }
+        .col3 { 
+            background-color: red; 
+            font-weight: bold; 
+        }
+        .col-green { 
+            background-color: green; 
+            color: white; 
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Header Row -->
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+
+    <!-- Combined Content Row -->
+    <tr>
+        <!-- Blue Column spans 2 rows -->
+        <td class="col1" rowspan="2">
+            <p>A numbered list:</p>
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </td>
+        <!-- Yellow and Red Cells -->
+        <td class="col2"><strong>B</strong></td>
+        <td class="col3"><strong>C</strong></td>
+    </tr>
+
+    <!-- Green Section Row -->
+    <tr>
+        <!-- No Column 1 cell here (already spanned) -->
+        <td colspan="2" class="col-green">
+            <p>An unnumbered list:</p>
+            <ul>
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

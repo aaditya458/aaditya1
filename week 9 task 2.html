@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Tavern</title>
+    <style>
+        body {
+            background-color: #00BFFF; /* Original blue background */
+            font-family: Verdana, sans-serif;
+            color: #330000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #CCAA66; /* Original brown container */
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            color: #330000; /* Restored text color */
+        }
+        .content {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #E8D882; /* Original yellow sidebar */
+            padding: 20px;
+        }
+        .main {
+            width: 80%;
+            padding: 20px;
+            background-color: #f1e8b0; /* Original cream main area */
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            background-color: #CCAA66; /* Match container color */
+        }
+        /* NEW IMAGE STYLES (added without affecting colors) */
+        .main-content {
+            display: flex;
+            gap: 20px;
+        }
+        .tavern-image {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #330000;
+            background-color: #fff; /* White image background */
+            padding: 5px;
+            object-fit: cover; /* Better image display */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Stinky Pete's Pirate Tavern</div>
+        <div class="content">
+            <div class="sidebar">
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Grog</a></p>
+                <p><a href="#">Shanties</a></p>
+                <p><a href="#">Become a swab</a></p>
+            </div>
+            <div class="main">
+                <p>Avast maties! Here ye'll be findin' all these delights...</p>
+                <div class="main-content">
+                    <ul>
+                        <li>Great grog</li>
+                        <li>All the rum you can drink</li>
+                        <li>Good honest pirate fare</li>
+                        <li>Wenches and swabs for every taste</li>
+                        <li>Salty seadogs singin' shanties</li>
+                    </ul>
+                    <img src="broken-image.jpg" class="tavern-image" 
+                         alt="Treasure Map 1 (Image missing)" 
+                         title="Captain's Secret Map">
+                </div>
+                <p>Berth 23<br>Nottingham Docks<br>0115 9324567</p>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2011 Stinky Pete's Pirate Tavern
+        </div>
+    </div>
+</body>
+</html>
